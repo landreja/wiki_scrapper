@@ -23,7 +23,7 @@ def index():
 
     objects = scraper.find(id="mw-content-text")
     texts = objects.find_all('p', limit=5)
-    return_dict = {key_word: []}
+    return_dict = {"message": []}
     for i in range(5):
         return_dict[key_word].append(texts[i].get_text())
         print(texts[i].get_text())
