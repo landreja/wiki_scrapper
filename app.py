@@ -1,6 +1,4 @@
-# Author: James Mejia
-# Date: 9/21/2020
-# Description:
+
 # Auther: James Landreth
 # Date 7/25/2021
 # Description: This program pulls wiki content based on a search
