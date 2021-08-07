@@ -6,7 +6,7 @@
 
 from flask import Flask, render_template, request, jsonify
 import os
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup4
 import requests
 import json
 
