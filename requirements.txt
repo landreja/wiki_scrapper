@@ -1,0 +1,5 @@
+django
+gunicorn
+django-heroku
+Flask==2.0.1
+Flask-MySQL==1.5.2
