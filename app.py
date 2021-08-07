@@ -15,7 +15,6 @@ app = Flask(__name__)
 
 @app.route("/", methods=["GET", "POST"])
 def index():
-    out_file = "Please enter a query by using ?q= and a key word"
     key_word = request.args.get("q")
     pull_page = requests.get("https://en.wikipedia.org/wiki/" + key_word)
 
@@ -25,7 +24,7 @@ def index():
     texts = objects.find_all('p', limit=5)
     return_dict = {"message": []}
     for i in range(5):
-        return_dict[key_word].append(texts[i].get_text())
+        return_dict["message"].append(texts[i].get_text())
         print(texts[i].get_text())
 
     return return_dict
