@@ -3,4 +3,4 @@ gunicorn
 django-heroku
 Flask==2.0.1
 requests
-BeautifulSoup4
+BeautifulSoup
